@@ -1,0 +1,51 @@
+function KeyboardState() {
+   this.left = false;
+	this.right = false;
+   this.up = false;
+   this.down = false;
+   this.fire = false;
+}
+
+function Player(x, y) {
+	this.vx = 0;
+	this.vy = 0;
+	this.dir = 0;
+   this.speed = 0;
+   this.alive = true;
+
+	this.x = x;
+	this.y = y;
+   this.radius = 12;
+   this.lives = 3;
+   this.points = 0;
+   this.invulnerable = false;
+   this.fire = false;
+   this.maxVelocity = 350;
+}
+
+function Asteroid(x, y, dir, speed, size) {
+	this.vx = 0;
+	this.vy = 0;
+   this.alive = true;
+
+	this.x = x;
+	this.y = y;
+   this.dir = dir;
+   this.speed = speed;
+   this.radius = size * 10;
+   this.rotation = 0;
+   this.size = size;
+}
+
+function Shot(x, y, dir, speed, created) {
+	this.vx = 0;
+	this.vy = 0;
+   this.alive = true;
+
+   this.x = x;
+   this.y = y;
+   this.dir = dir;
+   this.speed = speed;
+   this.radius = 4;
+   this.created = created;
+}

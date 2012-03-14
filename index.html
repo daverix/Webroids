@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Webroids - game built with Web Workers and other HTML5 features | Daverix.net</title>
+   <meta name="description" content="Classic asteroids game built with the HTML5 Canvas and a Web Worker." />
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <link rel="stylesheet" type="text/css" href="style.css" />
+   <!--[if IE]><script type="text/javascript" src="excanvas.js"></script><![endif]-->
+   <script src="common.js"></script>
+   <script src="game.js"></script>
+   <script src="update.js"></script>
+</head>
+<body>
+
+<div id="gamediv">
+	<canvas id="background" width="640" height="480"></canvas>
+	<canvas id="game" width="640" height="480">
+		Your browser doesn't support the canvas element!
+	</canvas>
+	<div id="gameover">
+		<h1>Game over!</h1>
+		<h2>High scores</h2>
+		<ol id="highscore"></ol>
+		<p>Press Enter to play again.</p>
+	</div>
+</div>
+
+<script>AsteroidsGame.init();</script>
+</body>
+</html>

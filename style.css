@@ -1,0 +1,36 @@
+#gamediv {
+   color: #fff;
+   margin: 0 auto;
+   width: 640px;
+   height: 480px;
+   font-family: sans-serif;
+	position: relative;
+}
+
+#background,
+#game,
+#gameover {
+   position: absolute;
+   top: 0;
+}
+
+#gameover {
+   width: 640px;
+   height: 480px;
+   text-align: center;
+   background: rgba(0,0,0,0.8);
+   display: none;
+}
+
+h1 {
+   font-size: 3em;
+}
+
+ol {
+	width: 33%;
+	margin: 0 auto;
+	text-align: left;
+}
+ol li {
+	text-align: left;
+}

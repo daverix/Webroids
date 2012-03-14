@@ -1,0 +1,5 @@
+Webroids
+
+An clone of the game Asteroids for the browser. Using HTML5 canvas to draw the graphics. Has a web worker that is running the physics. Don't really know if it makes any change because of the message passing. Probably takes more memory too.
+
+The game is Licensed as GPLv3.
